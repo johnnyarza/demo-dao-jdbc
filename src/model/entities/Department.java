@@ -2,7 +2,9 @@ package model.entities;
 
 import java.io.Serializable;
 
-public class Department implements Serializable{
+public class Department implements Serializable{/*Serializable é obrigatorio 
+para que o arquivo trafege em rede. Ele tranforma a classe em uma sequencia de bytes
+*/
 	
 	private static final long serialVersionUID = 1L;
 	private Integer id;
