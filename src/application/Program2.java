@@ -18,9 +18,22 @@ public class Program2 {
 		//depDao.insert(dep);
 		//System.out.println("Inserted new Department. New Department Id = " + dep.getId());
 		
-		System.out.println("=== TEST :update Department ====");
+		System.out.println("=== TEST2 :update Department ====");
 		depDao.update(dep);
 		System.out.println("Update! " + dep);
+		
+		//System.out.println("=== TEST3 :delete Department ====");
+		//System.out.print("Insert Department's id to delete: ");
+		//int id = sc.nextInt();
+		//depDao.deleteById(id);
+		//System.out.println("Department Id = " + id + " was deleted!");
+		
+		System.out.println("=== TEST4 :findById Department ====");
+		System.out.print("Insert Department's id to find: ");
+		int id = sc.nextInt();	
+		System.out.println(depDao.findById(id));
+		
+		
 		
 		
 		sc.close();
